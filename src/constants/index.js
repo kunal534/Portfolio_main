@@ -136,12 +136,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Feb 2024 - Aug 2024",
     points: [
-      "Engaged with clients through meetings and calls to design workflows for service delivery, emphasizing scalable and client-ready solutions.",
-      "Created product workflows and business reports to ensure service offerings aligned with client needs.",
+      "Designed a WhatsApp Business API automation to auto-respond to client queries, capture idea details, generate summaries, and push updates to Slack enabling faster BDE allocation and improving client closure rate by 8%.",
+      "Created tailored pitches and proposals on marketplaces and outsourcing platforms, leveraging market research to drive lead generation.",
     ],
   },
   {
-    title: "ML Intern",
+    title: "Machine Learning Intern",
     company_name: "Indian Oil Corporation Limited (IOCL)",
     company_website: "https://www.iocl.com",
     icon: iocl,
@@ -181,47 +181,55 @@ const projects = [
     source_code_link: "https://ciphor-bot.vercel.app",
   },
   {
-    name: "Block Reward",
+    name: "DOC-CRAWLER",
     description:
-      "Conceptualized and engineered an e-commerce tailored blockchain loyalty system featuring Flip Coins rewards boosting customer engagement, integrated with MetaMask for secure transactions. Implemented an auto-degenerating warranty slip as an NFT with a validity of 30 days.",
+      "Developed a Python-based web document crawler with a Streamlit interface that extracts technical content from webpages, summarizes it using the OpenAI API, and organizes results in a structured directory to improve information retrieval efficiency.**",
     tags: [
       {
-        name: "React",
+        name: "Python & Streamlit",
         color: "blue-text-gradient",
       },
       {
-        name: "Ethereum",
+        name: "BeautifulSoup",
         color: "green-text-gradient",
       },
       {
-        name: "Solidity",
+        name: "OpenAI API (via RapidAPI)",
         color: "pink-text-gradient",
       },
       {
-        name: "MetaMask",
+        name: "Modular Design Pattern",
         color: "orange-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/kunal534/web3",
+    source_code_link: "https://doc-modular.streamlit.app",
   },
   {
-    name: "Real-Estate",
+    name: "Topic Tracker",
     description:
-      "Developed a real estate app with React, driving user interactions. The application encompasses search features, property details, interactive maps, and seamless links to seller accounts.",
+      "Built an AI-powered system that uses web crawlers to monitor user-defined topics across Reddit, YouTube, and Google, automatically summarizes updates with ChatGPT and Mistral AI, and stores results for efficient, context-based retrieval, reducing redundant browsing by 20–30%.",
     tags: [
       {
-        name: "React.js",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "TailwindCSS",
+        name: "MongoDB",
         color: "green-text-gradient",
       },
       {
-        name: "CSS",
+        name: "LangChain",
         color: "pink-text-gradient",
       },
+      {
+        name:"Mistral AI API",
+        color: "orange-text-gradient"
+      },
+      {
+        name: "Task Scheduler",
+        color: "yellow-text-gradient",
+      }
     ],
     image: tripguide,
     source_code_link: "https://github.com/kunal534/real_estate",
