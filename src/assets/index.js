@@ -8,7 +8,8 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import market from "./market.png";
 import python from "./python.png";
-
+import jobit from "./jobit.png";
+import orderbook from "./orderbook.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -25,27 +26,22 @@ import threejs from "./tech/threejs.svg";
 import profile_pic from "./profile_pic.png";
 
 // companies
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-import digimantra from "./company/digimantra.png";
+
+import americanExpress from "./company/american-express.png";
 import goldenflitch from "./company/goldenflitch.png";
 import iocl from "./company/iocl.png";
 
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import ciphor_bot from "./Ciphor_bot.png";
 
 export {
   ciphor_bot,
   profile_pic,
+  americanExpress,
   goldenflitch,
   iocl,
-  digimantra,
   python,
+  orderbook,
   market,
   logo,
   backend,
@@ -68,11 +64,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
   tripguide,
+  jobit
 };

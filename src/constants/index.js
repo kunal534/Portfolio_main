@@ -13,14 +13,13 @@ import {
   git,
   figma,
   docker,
-  carrent,
   jobit,
-  tripguide,
   threejs,
+  orderbook,
   market,
   python,
+  americanExpress,
   iocl,
-  digimantra,
   goldenflitch,
   ciphor_bot,
 } from "../assets";
@@ -116,6 +115,20 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Software Development Apprentice",
+    company_name: "American Express",
+    company_website: "https://www.americanexpress.com",
+    company_location: "Gurugram, India",
+    icon: americanExpress,
+    iconBg: "#006FCF",
+    date: "Jan 2026 - Present",
+    points: [
+      "Consolidated multiple micro-frontend projects into a single monolithic deployment, eliminating dependency conflicts and release coordination overhead across 8 interdependent repositories.",
+      "Built reusable UI components and custom logic layers using React and Apollo Client (GraphQL) for dashboards serving 1,000+ internal users across multiple business units.",
+      "Maintained and improved existing CI/CD pipelines, wrote technical documentation and migration guides, and kept test coverage around 90% through code reviews and active sprint participation.",
+    ],
+  },
+  {
     title: "Business Development Executive",
     company_name: "Goldenflitch",
     company_website: "https://goldenflitch.com",
@@ -126,18 +139,6 @@ const experiences = [
       "Directed project coordination and operations by managing client interactions.",
       "Served as a key point of contact between clients and the company.",
       "Developed strategic pitches and detailed proposals to drive lead generation through marketplaces.",
-    ],
-  },
-  {
-    title: "Business Development Intern",
-    company_name: "DigiMantra Labs",
-    company_website: "https://www.digimantralabs.com",
-    icon: digimantra,
-    iconBg: "#E6DEDD",
-    date: "Feb 2024 - Aug 2024",
-    points: [
-      "Designed a WhatsApp Business API automation to auto-respond to client queries, capture idea details, generate summaries, and push updates to Slack enabling faster BDE allocation and improving client closure rate by 8%.",
-      "Created tailored pitches and proposals on marketplaces and outsourcing platforms, leveraging market research to drive lead generation.",
     ],
   },
   {
@@ -156,7 +157,7 @@ const experiences = [
 
 const projects = [
   {
-    name: "Cipher-Bot",
+    name: "CIPHER-BOT",
     description:
       "Developed a RAG-based chatbot using LangChain.js and Meta Llama to process user queries with real-time NLP, improving response accuracy and conversational flow. Integrated Redis for session-based caching to optimize response time, ensuring fast and efficient user interactions.",
     tags: [
@@ -206,33 +207,37 @@ const projects = [
     source_code_link: "https://doc-modular.streamlit.app",
   },
   {
-    name: "Topic Tracker",
+    name: "ORDERBOOK ENGINE",
     description:
-      "Built an AI-powered system that uses web crawlers to monitor user-defined topics across Reddit, YouTube, and Google, automatically summarizes updates with ChatGPT and Mistral AI, and stores results for efficient, context-based retrieval, reducing redundant browsing by 20–30%.",
+      "Built an in-progress low-latency limit order book and matching engine in C++17/20 with price-time priority. Uses std::map, std::list, and unordered_map with stored iterators for O(1) order lookup and cancellation. Supports Market, GTC, FillAndKill, FillOrKill, and GFD orders, uses std::mutex and std::scoped_lock for thread safety, and emits trade events and aggregated market-depth data.",
     tags: [
       {
-        name: "Python",
+        name: "C++17/20",
         color: "blue-text-gradient",
       },
       {
-        name: "MongoDB",
+        name: "STL",
         color: "green-text-gradient",
       },
       {
-        name: "LangChain",
+        name: "Multithreading",
         color: "pink-text-gradient",
       },
       {
-        name:"Mistral AI API",
-        color: "orange-text-gradient"
+        name: "RAII",
+        color: "orange-text-gradient",
       },
       {
-        name: "Task Scheduler",
+        name: "Move Semantics",
         color: "yellow-text-gradient",
-      }
+      },
+      {
+        name: "Smart Pointers",
+        color: "yellow-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/kunal534/Topic_Tracker",
+    image: orderbook,
+    source_code_link: "https://github.com/kunal534/Quant",
   },
 ];
 

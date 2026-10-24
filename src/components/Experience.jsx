@@ -48,6 +48,9 @@ const ExperienceCard = ({ experience }) => {
             experience.company_name
           )}
         </p>
+        {experience.company_location && (
+          <p className="text-secondary text-[14px]">{experience.company_location}</p>
+        )}
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
